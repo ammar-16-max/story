@@ -12,8 +12,7 @@ body{
     font-size: 14px;
     line-height: 1.5;
 }
-
-
+/* القائمة العلوية */
 nav.custom-navbar{
     border-bottom: 3px solid #EEF0EA;
     width: 100%;
@@ -195,4 +194,106 @@ ul.navbar-nav li a.icon-btn{
 
 #store-features .feature+.feature{
     border-right: 1px solid #fff;
+}
+/* الاكثر مبيعا  */
+.heading{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.custom-thumbnail{
+    border: 2px solid #EEF0EA;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.custom-thumbnail:hover{
+    border-color: #53ccd7;
+}
+.custom-thumbnail img{
+    max-height: 250px;
+    width: 100%;
+    max-width: 250px;
+}
+.custom-thumbnail h4{
+    font-size: 18px;
+}
+.rating{
+    color: #c2c2c2;
+}
+.rating .active{
+    color: #F3AF41;
+}
+.price{
+ color: #53ccd7;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(83, 204, 215, 0.5);
+    height: 250px;
+    width: calc(100% - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.add-to-cart-btn{
+    color: #53CCD7;
+    background-color: #fff;
+}
+.custom-thumbnail .sale{
+    padding: 5px 10px;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+}
+.custom-thumbnail .sale::after{
+    content: "-";
+}
+.custom-carousel-indicators2{
+    bottom: -20px !important; 
+    list-style: none !important;
+}
+.custom-carousel-indicators2>li{
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2px !important;
+    background-color: #dbdbdb !important;
+}
+.custom-carousel-indicators2>li.active{
+    background-color: #565656 !important;
+}
+/* الماركات العالمية */
+
+#row-brands h3.heading {
+    border-top: 1px solid #eef0ea;
+    padding-top: 25px;
+}
+.panel{
+    border: 4px solid #EEF0EA;
+    border-radius: 2px;
+    padding: 20px;
+}
+.panel h4,
+.panel .price{
+    font-size: 130%;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.custom-text-muted{
+    color: #a9a9a9;
+}
+.arrow-btn {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    color: #868686;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.panel .clearfix{
+    margin-top: 12px;
 }
