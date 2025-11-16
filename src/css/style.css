@@ -19,11 +19,11 @@ nav.custom-navbar{
     background-color: #fff;
     padding: 15px 0; 
 }
-nav.navbar form .custom-form:focus{
+nav.navbar form .custom-form-control:focus{
  border: 1px solid #b9001b;
  box-shadow: 0 0 2px 0 #b9001b;
 }
-nav.navbar form .custom-form,
+nav.navbar form .custom-form-control,
 .dropdown a.custom-btn{
     border: 1px solid  #ebebeb;
     box-shadow: none;
@@ -31,6 +31,15 @@ nav.navbar form .custom-form,
     color: #868686;
     height: 38px;
     padding: 6px 16px 7px;
+    transition: all 0.5s ease;
+}
+.custom-form-control{
+    border: 1px solid  #ebebeb;
+    box-shadow: none;
+    border-radius: 2px;
+    color: #868686;
+    height: 38px;
+    padding: 6px 16px 7px !important;
     transition: all 0.5s ease;
 }
 .dropdown a.custom-btn:hover{
@@ -449,7 +458,7 @@ ul.dropdown-menu li a:hover{
         border-color: #fff;
         outline:1px solid #000;
     }
-    input{
+    .product-option input{
         display: none;
     }
     .product-quantity select{
@@ -537,6 +546,19 @@ tbody .custom-btn-outline-danger:hover{
 }
 
 /* end-checkout */
+
+/* payment.html */
+
+.custom-input-details{
+    border-radius: 3px;
+    border-width: 2px;
+    height: 46px !important;
+    padding: 0 16px;
+    font-size: 18px;
+    width: 98%;
+}
+
+/* end-payment */
 
 @media (max-width: 1399.98px) {  }
 
